@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    #wrapper {
+        width: 100%;
+        margin: 0 auto;
+        box-sizing: border-box;
+        border: 1px;
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        overflow: auto;
+        background-color: silver;
+    }
+
+    .container {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .flexnav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: rgb(250, 204, 118);
+    }
+
+    nav {
+        margin: 0;
+        padding: 0;
+    }
+
+    nav ul li {
+        list-style-type: none;
+        display: inline-block;
+        padding: 10px 15px;
+    }
+
+    .firstcon {
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    section {
+        background-image: url(/images/pexels-pixabay-164634.jpg);
+        height: 400px;
+        width: 100%;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .hero {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 50px;
+        color: orange;
+        text-align: center;
+        padding-top: 100px;
+    }
+
+    .secondcontainer {
+        width: 100%;
+    }
+
+    h1 {
+        text-align: center;
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    #service {
+    width: 100%;
+    margin-top: 60px;
+}
+
+    .allservice {
+        display: flex;
+        margin-left: 60px;
+    }
+
+    .paper {
+        width: 300px;
+        height: 320px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        transition: box-shadow 0.3s, transform 0.3s;
+    }
+
+    .lick {
+        width: 100%;
+        border: none;
+        background: white;
+    }
+
+    .business {
+        width: 300px;
+        height: 150px;
+        background: url(assets/images/cars/car\ showcase.jpg);
+        background-position: center;
+        background-size: cover;
+        cursor: pointer;
+    }
+
+    .business2 {
+        width: 300px;
+        height: 150px;
+        background: url(assets/images/cars/pexels-alexgtacar-1592384.jpg);
+        background-position: center;
+        background-size: cover;
+        cursor: pointer;
+    }
+
+    .business3 {
+        width: 300px;
+        height: 150px;
+        background: url(assets/images/cars/pexels-arnie-watkins-3156482.jpg);
+        background-position: center;
+        background-size: cover;
+        cursor: pointer;
+    }
+</style>
+
+<body>
+    <header>
+        <div id="wrapper">
+            <div class="firstcon">
+                <div class="container flexnav">
+                    <div class="logo">logo</div>
+                    <nav>
+                        <ul>
+                            <li>Home</li>
+                            <li>About</li>
+                            <li>Blog</li>
+                            <li>Contact</li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <section>
+                <p class="hero">Oracle's <br>Dealership</p>
+            </section>
+            <h1>Car Available</h1>
+                <div id="service">
+                    <div class="allservice">
+                        <div class="paper">
+                            <button class="lick" onclick="toyota()">
+                                <div class="business"></div>
+                            </button>
+                            <div class="name">
+                                <p id="demo">
+                                <p id="demo2">
+                                <p id="demo3">
+                                <p id="demo4">
+                                <p id="demo5">
+                                <p id="demo6">
+                                <p id="demo7">
+                                </p>
+                                <button class="contact1">Purchase</button>
+                                <button class="contact1">Loan</button>
+                            </div>
+
+                        </div>
+                        <div class="paper">
+                            <button class="lick" onclick="myBusiness1()">
+                                <div class="business1"></div>
+                            </button>
+                            <div class="name">
+                                <p id="demos"></p>
+                                <p id="demos2"></p>
+                                <p id="demos3"></p>
+                                <p id="demos4"></p>
+                                <p id="demos5"></p>
+                                <p id="demos6"></p>
+                                <p id="demos7"></p>
+                                <button class="contact1">Purchase</button>
+                                <button class="contact1">Loan</button>
+                            </div>
+                        </div>
+                        <div class="paper">
+                            <button class="lick" onclick="myBusiness2()">
+                                <div class="business2"></div>
+                            </button>
+                            <div class="name">
+                                <p id="dems"></p>
+                                <p id="dems2"></p>
+                                <p id="dems3"></p>
+                                <p id="dems4"></p>
+                                <p id="dems5"></p>
+                                <p id="dems6"></p>
+                                <p id="dems7"></p>
+                                <button class="contact1">Purchase</button>
+                                <button class="contact1">Loan</button>
+                            </div>
+                        </div>
+                        <div class="paper">
+                            <button class="lick" onclick="myBusiness3()">
+                                <div class="business3"></div>
+                            </button>
+                            <div class="name">
+                                <p id="demes"></p>
+                                <p id="demes2"></p>
+                                <p id="demes3"></p>
+                                <p id="demes4"></p>
+                                <p id="demes5"></p>
+                                <p id="demes6"></p>
+                                <p id="demes7"></p>
+                                <button class="contact1">Purchase</button>
+                                <button class="contact1">Loan</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </header>
+</body>
+
+</html>
+<script>
+    function toyota() {
+        const Brands = "Toyota";
+        const Models = "Camry";
+        const Year = "2022";
+        const Chasis = " FP12350";
+        const Color = "White";
+        const Seat_type = "Leather";
+        const Cars = {
+            Brand: brands,
+            Model: models,
+            Year: year,
+            Chasis: chasis,
+            Color: color,
+            Seattype: seat_type
+        }
+        document.getElementById("cardetails").innerHTML = cars.brand + "<br>" + cars.model + "<br>" + cars.year + "<br>" + cars.chasis + "<br>" + cars.color + "<br>" + cars.seat_type;
+    }
+</script>
